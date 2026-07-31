@@ -6,31 +6,29 @@ const mensagem = document.getElementById("mensagem-feedback");
 const listaComentarios = document.getElementById("lista-comentarios");
 
 
-//Etapa 1 - Interceptando o Envio do Formulário
+// Envio do Formulário
 form.addEventListener("submit", function(event){
     event.preventDefault(); //impede o recarregamento da página
 
-   // Etapa 2 - Pegando os Valores Digitados
+   //Pegando os Valores Digitados
    const nomeDigitado = inputNome.value.trim(); //value captura o conteúdo inserido na caixa nome , trim - limpa espaços ao início e fim
    const comentarioDigitado = inputComentario.value.trim();
-   //console.log(nomeDigitado);
 
-   //Etapa 3 - Criando a Validação
+   // Criando a Validação
    if(nomeDigitado === "" || comentarioDigitado === "") {
     //Regra de erro
-    // Etapa 4 - Feedback de erro
+    // Feedback de erro
     mensagem.textContent = "Erro: Preencha todos os campos!";
     mensagem.style.color = "red";
 
    } else {
-    //Regra de sucesso
-    // Etapa 4 - Feedback de sucesso
+    // Feedback de sucesso
     mensagem.textContent = "Feedback enviado com sucesso!";
     mensagem.style.color = "green";
 
    }
 
-   //Etapa 5 - Renderizando o Novo Item na Tela
+   // Novo Item na Tela
    // criando tag html li
    const novoItem = document.createElement("li"); 
    // inserido texto no li

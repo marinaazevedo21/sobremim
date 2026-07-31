@@ -12,6 +12,14 @@ body {
   color: #1e293b;
 }
 
+/* Cabeçalho */
+.header {
+  background-color: #1e293b;
+  color: #ffffff;
+  padding: 6px;
+  text-align: center;
+}
+
 h1 {
   margin: 50px;
   padding: 10px;
@@ -23,16 +31,18 @@ h2 {
   padding: 20px;
   text-align: center;
 }
-p {
-  text-align: center; /*o p é para parágrafo centralizar ele*/
+
+h3{
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
 }
 
-/* Cabeçalho */
-.header {
-  background-color: #1e293b;
-  color: #ffffff;
-  padding: 6px;
+#lista-comentarios{
+   margin: 20px;
+  padding: 0px;
   text-align: center;
+  list-style: none;
 }
 
 .foto-de-perfil {
@@ -141,7 +151,7 @@ p {
 
 /* Estilo de cada etiqueta de habilidade */
 .tag {
-  background-color: #000000; /* Fundo preto (combina com a borda da sua foto) */
+  background-color: #000000; 
   color: #ffffff; /* Texto branco */
   padding: 8px 16px;
   border-radius: 20px; /* Deixa a foto redonda */
@@ -195,7 +205,7 @@ p {
 
 /* Efeito ao passar o mouse por cima do botão */
 .botao-contato:hover {
-  background-color: #333333; /* O preto fica um pouquinho mais claro */
+  background-color: #333333; 
 }
 
 form {
@@ -217,9 +227,10 @@ button {
   /*#chama o id*/
   margin-top: 10px;
   font-weight: bold; /* negrito*/
+  text-align: center;
 }
 
-/* Rodapé -> está chamando só a tag*/
+/* Rodapé - está chamando só a tag*/
 footer {
   background-color: #1e293b;
   color: white;
